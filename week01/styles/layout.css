@@ -1,0 +1,61 @@
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 2fr auto / 2fr 1fr;
+}
+
+header {
+    background: rgb(239, 188, 155);
+    text-align: center;
+    grid-column: 1 / 4;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+nav {
+    background: rgb(157, 106, 137);
+    padding: 2rem;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+main {
+    background: rgb(238, 146, 194);
+    grid-column: 2 / 3;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 30px;
+    font-style: normal;
+    padding: 2em;
+}
+
+.left-sidebar {
+    background: rgb(114, 93, 104);
+    grid-column: 1 / 2;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 30px;
+    font-style: normal;
+    padding: 2em;
+  }
+
+footer {
+    background: rgb(239, 188, 155);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 30px;
+    font-style: normal;
+}
+
