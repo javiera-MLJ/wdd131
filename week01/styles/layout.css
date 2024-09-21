@@ -32,8 +32,7 @@ main {
     background: rgb(238, 146, 194);
     grid-column: 2 / 3;
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 30px;
+    font-weight: 500;
     font-style: normal;
     padding: 2em;
 }
@@ -42,8 +41,7 @@ main {
     background: rgb(114, 93, 104);
     grid-column: 1 / 2;
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 30px;
+    font-weight: 500;
     font-style: normal;
     padding: 2em;
   }
@@ -54,8 +52,7 @@ footer {
     text-align: center;
     grid-column: 1 / 4;
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 30px;
+    font-weight: 500;
     font-style: normal;
 }
 
