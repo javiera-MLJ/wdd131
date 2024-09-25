@@ -37,6 +37,9 @@ nav a:hover {
     color:rgb(239, 188, 155)
 }
 
+main {
+    max-width: 100%;
+}
 section.right {
     background: rgb(238, 146, 194);
     grid-column: 2 / 4;
