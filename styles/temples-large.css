@@ -1,0 +1,43 @@
+@media (min-width: 55rem) {
+	h1 {
+		font-size: 3rem;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; 
+	}
+
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.navigation {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+
+    .navigation a {
+        display: block;
+		flex: 1 1 100%;
+	}
+
+    .temples {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1rem;
+    }
+    
+    footer p{
+        font-size: 1.3rem;
+    }
+
+}

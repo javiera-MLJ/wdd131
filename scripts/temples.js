@@ -5,4 +5,10 @@ document.getElementById("currentyear").textContent = currentyear;
   const formattedDate = lastModifiedDate.toLocaleString();
   document.getElementById("lastModified").textContent = `last Modified: ${formattedDate}`;
 
-  
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
