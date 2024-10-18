@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals - Javiera Lorca Jimenez</title>
+    <meta name="description" content="Ensenada is a rural town in southern Chile, located at the easternmost point of Lake Llanquihue. Learn more about it and its climate.">
+    <meta name="author" content="Javiera Millarai Lorca Jimenez">
+    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/places-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ensenada - Puerto Varas</h1>
+    </header>
+    <main>
+        <div class="into-image">
+        <picture>
+            <source srcset="images/ensenada-large.webp" media="(min-width: 880px)">
+            <img class="main" src="images/ensenada-small.webp" alt="Ensenada - Puerto Varas">
+        </picture>
+            <section class="data">
+                <h2>Data</h2>
+                <ul class="info-list">
+                    <li><span>Area:</span> <span class="value">20,017.096 km²</span></li>
+                    <li><span>Population:</span> <span class="value">443,807</span></li>
+                    <li><span>Province:</span> <span class="value">Llanquihue</span></li>
+                    <li><span>Languages:</span> <span class="value">Latin Spanish</span></li>
+                    <li><span>Currency:</span> <span class="value">Chilean Peso</span></li>
+                    <li><span>Time Zone:</span> <span class="value">GMT-3</span></li>
+                    <li><span>Calling Code:</span> <span class="value">+569</span></li>
+                    <li><span>Internet TLD:</span> <span class="value">.cl</span></li>
+                </ul>
+            </section>
+            <section class="weather-list">
+                <h2 class="weather-title">Weather</h2>
+                <div class="weather-img">
+                    <img src="images/rain-cloud-icon.svg" alt="cloud icon" width="100">
+                </div>
+                <ul class="info-list">
+                    <li><span>Temperature:</span> <span class="value">10°C</span></li>
+                    <li><span>Conditions:</span> <span class="value">Cloudy</span></li>
+                    <li><span>Wind:</span> <span class="value">6 km/h</span></li>
+                    <li><span>Wind Chill:</span> <span id="wind-chill" class="value">°C</span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> 🌟 Javiera Millarai Lorca Jimenez 🌟 Puerto Montt - Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
