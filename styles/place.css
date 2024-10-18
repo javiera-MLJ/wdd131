@@ -1,3 +1,8 @@
+:root{
+    --main-color: #42a3e7;
+    --background-color: #013295;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -16,7 +21,7 @@ h2 {
     font-family: "Comic Neue", cursive;
     font-weight: 700;
     font-style: normal;
-	color: #013295;
+	color: var(--background-color);
 	text-align: left;
 	margin: 1rem;
     font-size: 2.5rem;
@@ -75,7 +80,7 @@ section {
 
 header {
   max-width: 100%;
-  background: linear-gradient(#42a3e7 ,70%,  white);
+  background: linear-gradient(var(--main-color) ,70%,  white);
   font-family: "Comic Neue", cursive;
   font-weight: 400;
   font-style: normal;
@@ -87,7 +92,7 @@ footer {
     max-width: 100%;
     border: 1px solid #bbb;
     padding: 2rem;
-    background-color: #42a3e7;
+    background-color: var(--main-color);
     font-family: "Comic Neue", cursive;
     font-weight: 500;
     font-style: normal;
