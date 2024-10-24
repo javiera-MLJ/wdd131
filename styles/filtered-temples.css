@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: left;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+	font-size: 2rem;
+	margin-left: 1rem;
+}
+
+h2 {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: larger;
+	color: #07334fc1;
+	text-align: left;
+	margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav {
+	max-width: 700px;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.navigation a:hover {
+	background-color: #B8F0FA;
+    transform: translateY(-5px);
+}
+
+.open a {
+	display: block;
+}
+
+body {
+  border: 2em;
+}
+
+header {
+  max-width: 100%;
+  background-color: #90E0EF;
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px #333;
+}
+
+footer {
+    max-width: 100%;
+    border: 1px solid #bbb;
+    padding: 2rem;
+    background-color: #90E0EF;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer p {
+    text-align: center;
+}
+.temples {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  justify-items: center;
+  padding: 2rem;
+}
+
+figcaption {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+.col {
+    padding: 10px;
+}
+
+.card {
+    background-color: rgba(209, 180, 180, 0.226);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-img {
+    width: 400px;
+    height: 250px;
+    padding: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+@media (min-width: 600px) {
+    
+    .temples {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem;
+    }
+}
