@@ -9,7 +9,7 @@ h1 {
     font-family: "Comic Neue", cursive;
     font-weight: 700;
     font-style: normal;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin-left: 1rem;
 }
 
@@ -108,7 +108,7 @@ footer p {
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   justify-items: center;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 figcaption {
@@ -129,12 +129,12 @@ figcaption {
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .card-img {
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     padding: 1rem;
 }
 
