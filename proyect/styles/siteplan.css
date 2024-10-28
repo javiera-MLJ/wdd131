@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+}
+
+main {
+  padding: 4em;
+}
+p, li {
+    font-family: var(--paragraph-font);
+    font-weight: 600;
+    padding: 1em;
+    font-size: 20px;
+}
+
+:root {
+    --primary-color: #64A6BD;
+    --secondary-color: #ADA7C9;
+    --accent1-color: #a375a0;
+    --accent2-color: #90A8C3;
+
+    --small-headings-font: "Quicksand", sans-serif;
+    --heading-font: "Ms Madi", cursive;
+    --paragraph-font: "Poiret One", sans-serif;
+
+    --nav-background-color: #90A8C3;
+    --nav-link-color: #03264a;
+    --nav-hover-link-color: #FFFFFF;
+    --nav-hover-background-color: #4A6B91;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: rgb(28, 15, 98);
+    font-weight: 400;
+    font-size: 70px;
+    padding: 1em;
+    text-align: center;
+}
+
+h2 {
+  font-family: var(--small-headings-font);
+  color: rgb(28, 15, 98);
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0.5em;
+}
+
+h3 {
+  font-family: var(--small-headings-font);
+  color: #8d3a87;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 1em;
+}
+
+header {
+
+    padding: 2em;
+    background-color: var(--primary-color);
+}
+
+p {
+    padding: 1em;
+
+}
+
+nav {
+  background-color: var(--secondary-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 25px;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 2em;
+}
