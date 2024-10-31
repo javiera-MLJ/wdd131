@@ -1,0 +1,209 @@
+@media (min-width: 600px) { 
+
+    #menu {
+        display: none; 
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem;
+        color: black;
+        font-size: 23px;
+    }
+
+    .big-footer{
+        grid-column: 1/3;
+        margin: .8rem;
+    }
+
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+    h1 {
+		margin-left: 0;
+	}
+
+    .navigation {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        align-content: center;
+	}
+
+    section.about-us {
+        margin: 2em;
+    }
+
+    .offers {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+
+
+    .title-index {
+        padding: 6rem;
+    }
+
+    section img{
+        width: 100%;
+        padding: 1rem;
+        max-width: 800px;
+    
+    }
+
+    section {
+        display: grid;
+        justify-content: center;
+    }
+
+    .courses {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .card {
+		padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 530px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .join { 
+        font-size: 40px;
+    }
+
+    .general-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }  
+    
+    .wf1 {
+        width: 100%; 
+        max-width: 800px; 
+        padding: 2rem;
+        margin: auto;
+        box-sizing: border-box;  
+        border-radius: 8px; 
+    }
+
+    .wf1 fieldset {
+        padding: 1rem 2%
+    }
+
+    .wf1 input[type="submit"]{
+        padding: 1.2rem;
+        font-size: 20px;
+
+    }
+
+    .wf1 input[type="submit"]:hover{
+        background-image: linear-gradient(#6e6777, #a07086);
+    }
+
+
+    .about-us { 
+        display: flex; 
+        flex-wrap: wrap; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 1rem; 
+    } 
+    .about-us h2 { 
+        width: 100%; 
+        text-align: center; 
+        font-size: 2.5rem; 
+        margin-bottom: 1rem; 
+        font-family: var(--small-headings-font);
+    } 
+    .about-us img { 
+        max-width: 100%; 
+        height: auto; 
+        max-width: 800px;
+        transition: transform 0.3s ease; 
+    } 
+    .about-us img:hover { 
+        transform: scale(1.05); 
+    } 
+
+    .offers h2{
+        grid-column: 1/3;
+    }
+
+    .about-us-text{
+        margin: 2% 6rem;
+
+    }
+    .welcome-img {
+        max-width: 800px;
+    }
+
+    .center-img {
+        display: flex; 
+        flex-wrap: wrap; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 1rem; 
+    }
+}
+@media (min-width: 70rem) {
+
+	body {
+		height: 100%;
+		margin: 0; 
+		display: grid;
+		grid-template-rows: 1fr auto; 
+	}
+
+	h1 {
+		font-size: 6rem;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+    .courses {
+        grid-template-columns: repeat(3,1fr);
+		padding: 2rem;
+        grid-gap: 2rem;
+    }
+
+    footer p{
+        font-size: 1.3rem;
+    }
+    
+    .card {
+        height: 650px;
+
+    }
+	.card-img {
+		width: 400px;
+		height: 250px;
+
+	}
+
+    .main-page{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .image-degraded::before {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0)50%, rgba(172, 169, 189, 0.9) 100%);
+    }
+
+}

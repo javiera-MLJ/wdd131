@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="styles/sport-art.css">
         <link rel="stylesheet" href="styles/sport-art-large.css">
         <script defer src="scripts/sport-art.js" async></script>
+
     </head>
     <body>
         <header>
@@ -24,31 +25,13 @@
             </nav>
         </header>
         <main>
-            <div class="main-page">
-                <div class="image-degraded">
-                <picture class="main-image">
-                    <source srcset="images/main-img-large.webp" media="(min-width: 600px)">
-                    <img class="main" src="images/main-img.webp" alt="gymnastics club" loading="lazy">
-                </picture>
-                </div>
-                <div class="title-index">
-                    <h1>Sport and art</h1>
-                    <p>Gymnastic Club</p>
-                </div>
-            </div>
-            <section class="about-us">
-                <h2>About Us</h2>
-                <img src="images/sport-art-club.webp" alt="Sport And Art gymnasts Introduction team" loading="lazy">
-                <section class="about-us-text">
-                    <h2>Our Club</h2>
-                    <p>We are a team excited to find talented people who want to be part of our team and who want to learn everything that involves learning the art of gymnastics, we have people specialized in training them according to the ages and abilities of each one, do not hesitate to join our group!!</p>
-                </section>                  
-                <section class="offers">
-                    <h2>Offers</h2>
-                    <p>Do you want to give your son a gift this Christmas? We give you a 20% discount for a 1-year subscription for your child this Christmas, don't miss it!!</p>
-                    <p>new location in Liverpool, United Kingdom, everyone is welcome!!</p>  
-                </section>                  
-            </section>
+            <h1>Courses and Fees</h1>
+            <nav class="filtered">
+                <a href="#" id="introductions">For Kids</a>
+                <a href="#" id="premium">For Adults</a>
+            </nav>
+            <div class="courses" id="card-template"></div>
+            <a href="join-us.html" class="join">sign up for a course now</a>
         </main>
         <footer>
             <nav class="socialinks">

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>sport and art | index</title>
+        <meta name="description" content="project related to a website that evaluates the practice of using html, css and javascript as well as responsive images, page adaptation for cell phones, etc.">
+        <meta name="author" content="Javiera Lorca">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Poiret+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/sport-art.css">
+        <link rel="stylesheet" href="styles/sport-art-large.css">
+        <script defer src="scripts/sport-art.js" async></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.webp" alt="logo sport art" loading="lazy">
+            <button type="button" id="menu" title="Main Menu"></button>
+            <nav class="navigation">
+                <a href="sport-art-index.html">Index</a>
+                <a href="courses-and-fees.html">Courses and Fees</a>
+                <a href="join-us.html" class="active">Join Us</a>
+            </nav>
+        </header>
+        <main>
+            <h1>sign up for a course</h1>
+            <div class="general-form">
+                <form method="get" action="welcome.html" class="wf1">
+                <fieldset>
+                    <legend>personal information</legend>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" required></label>
+                    <label>Id* <input type="text" name="Id" placeholder="12345678k" required></label>
+                    <label> Date of Birth* <input type="date" name="completeDate" required></label>
+                    <div class="mini-title">Gender</div>
+                    <label><input type="radio" name="Gender" value="Male"> Male</label>
+                    <label><input type="radio" name="Gender" value="Female"> Female</label>
+                    <label><input type="radio" name="Gender" value="notsay"> Prefer not to say</label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>Contact Number <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <div class="mini-title">Address</div>
+                    <label> Country
+                        <select name="Subject">
+                            <option value="">Please Select &#9662;</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="canada">Canada</option>
+                        <option value="Chile">Chile</option>
+                        <option value="China">China</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Hong Kong, China">Hong Kong, China</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="India">India</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Korea">Korea</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="United States">United States</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Vietnam">Vietnam</option>
+                        </select>
+                    </label>
+                    <label>Address Line 1* <input type="text" name="addressl1" required></label>
+                    <label>Address Line 2 <input type="text" name="addressl2"></label>
+                    <label>Town* <input type="text" name="town" required></label>
+                    <label>County* <input type="text" name="Country" required></label>
+                    <label>Post Code <input type="text" name="Postcode" ></label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Course Information</legend>
+                        <label> select a course*
+                            <select name="Subject">
+                                <option value="">Please Select</option>
+                            <option value="artistic-intro">Introduction to Artistic Gymnastics</option>
+                            <option value="artistic-premium">Premium Artistic Gymnastics Club</option>
+                            <option value="acrobatic-intro">Introduction to Acrobatic Gymnastics</option>
+                            <option value="acrobatic-premium">Premium Acrobatic Gymnastics Club</option>
+                            <option value="aerobics-intro">Introduction to Aerobics Gymnastics</option>
+                            <option value="aerobics-premium">Premium Aerobics Gymnastics Club</option>
+                            <option value="trampoline-intro">Introduction to Trampoline Gymnastics</option>
+                            <option value="trampoline-premium">Premium Trampoline Gymnastics Club</option>
+                            <option value="parkour-intro">Introduction to Parkour</option>
+                            <option value="parkour-premium">Premium Parkour Club</option>
+                            </select>
+                        </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>course payment</legend>
+                    <label>card number* <input type="tel" name="card-number" placeholder="1234 5678 1234 5678" required></label>
+                    <label>name* <input type="text" name="name" required></label>
+                    <label>expiration date* <input type="month" name="expiration" required></label>
+                    <label>CVC* <input type="tel" name="cvc" placeholder="123" required></label>
+
+                </fieldset>
+                <input type="submit" value="join the club">
+                </form>
+            </div>        
+        </main>
+        <footer>
+            <nav class="socialinks">
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://twitter.com">Twitter</a>
+                <a href="https://instagram.com">Instagram</a>
+            </nav>
+            <p id="lastModified"></p>
+            <p class="big-footer">© <span id="currentyear"></span> 🌟 Javiera Millarai Lorca Jimenez 🌟 Puerto Montt - Chile</p>
+        </footer>
+    </body>
+</html>
