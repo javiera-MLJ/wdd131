@@ -1,0 +1,141 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: #cd97da;
+    text-align: center;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {border-bottom: solid 1px #333;}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: #d3c1d8;
+}
+
+
+.form label ,.form legend, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #5d196e;
+    font-size: .9rem;
+}
+
+
+.form input[type="text"],
+.form input[type="date"],
+.form select,
+.form textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    appearance: none;
+}
+
+.form input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.form input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#b79dc0, #542868);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.form input:required{
+    border: solid 3px #5d196e;
+}
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: #410650;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); 
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+
+footer {
+    background-color: #cd97da;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+span {
+    font-style: italic;
+    color: #000;
+}

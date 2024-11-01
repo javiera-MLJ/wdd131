@@ -156,62 +156,18 @@ function createTemplateCard(filteredCourses) {
     cardTemplate.insertAdjacentHTML(`beforeend`, cardHTML)
   });
 }
-
-document.querySelector('.wf1').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  let formData = {
-      fname: document.querySelector('input[name="fname"]').value,
-      lname: document.querySelector('input[name="lname"]').value,
-      id: document.querySelector('input[name="Id"]').value,
-      completeDate: document.querySelector('input[name="completeDate"]').value,
-      gender: document.querySelector('input[name="Gender"]:checked') ? document.querySelector('input[name="Gender"]:checked').value : '',
-      phone: document.querySelector('input[name="phone"]').value,
-      email: document.querySelector('input[name="email"]').value,
-      country: document.querySelector('select[name="Subject"]').value,
-      addressl1: document.querySelector('input[name="addressl1"]').value,
-      addressl2: document.querySelector('input[name="addressl2"]').value,
-      town: document.querySelector('input[name="town"]').value,
-      county: document.querySelector('input[name="Country"]').value,
-      postcode: document.querySelector('input[name="Postcode"]').value,
-      course: document.querySelector('select[name="Subject"]').value,
-      cardNumber: document.querySelector('input[name="card-number"]').value,
-      cardName: document.querySelector('input[name="name"]').value,
-      expiration: document.querySelector('input[name="expiration"]').value,
-      cvc: document.querySelector('input[name="cvc"]').value
-  };
-
-  console.log('Form Data:', formData);
+document.addEventListener("DOMContentLoaded", () => {
+  const FormDisplay = document.querySelector(".joinClub");
+  const form = document.querySelector('.wf1');
+  let formsSended = Number(localStorage.getItem("FormsSended-ls")) || 0;
   
-  localStorage.setItem('formData', JSON.stringify(formData));
+  FormDisplay.textContent = formsSended;
 
-  alert('data saved in local storage');
-});
-
-window.addEventListener('load', function() {
-  if (localStorage.getItem('formData')) {
-      let savedData = JSON.parse(localStorage.getItem('formData'));
-      document.querySelector('input[name="fname"]').value = savedData.fname;
-      document.querySelector('input[name="lname"]').value = savedData.lname;
-      document.querySelector('input[name="Id"]').value = savedData.id;
-      document.querySelector('input[name="completeDate"]').value = savedData.completeDate;
-      if (savedData.gender) {
-          document.querySelector(`input[name="Gender"][value="${savedData.gender}"]`).checked = true;
-      }
-      document.querySelector('input[name="phone"]').value = savedData.phone;
-      document.querySelector('input[name="email"]').value = savedData.email;
-      document.querySelector('select[name="Subject"]').value = savedData.country;
-      document.querySelector('input[name="addressl1"]').value = savedData.addressl1;
-      document.querySelector('input[name="addressl2"]').value = savedData.addressl2;
-      document.querySelector('input[name="town"]').value = savedData.town;
-      document.querySelector('input[name="Country"]').value = savedData.county;
-      document.querySelector('input[name="Postcode"]').value = savedData.postcode;
-      document.querySelector('select[name="Subject"]').value = savedData.course;
-      document.querySelector('input[name="card-number"]').value = savedData.cardNumber;
-      document.querySelector('input[name="name"]').value = savedData.cardName;
-      document.querySelector('input[name="expiration"]').value = savedData.expiration;
-      document.querySelector('input[name="cvc"]').value = savedData.cvc;
+  if (form) { 
+      form.addEventListener('submit', () => {
+          formsSended++;
+          localStorage.setItem("FormsSended-ls", formsSended);
+          FormDisplay.textContent = formsSended;
+      });
   }
 });
-
-
