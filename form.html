@@ -3,20 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>sport and art | index</title>
+        <title>Form |  WDD 131</title>
         <meta name="description" content="Practice project to demonstrate what you have learned in HTML and LocalStorage Javascript forms">
         <meta name="author" content="Javiera Lorca">
         <link rel="stylesheet" href="styles/form.css">
         <link rel="stylesheet" href="styles/form-large.css">
-        <script defer src="scripts/form.js" async></script>
+        <script defer src="scripts/form.js"></script>
     </head>
     <body>
         <header>
             <h1>Product Review</h1>
         </header>
         <main>
-            <form method="get" action="review.html" class="form">
-                <label>Product Name <span class="required">*</span>
+            <form action="review.html" method="get" class="formreview">
+                <label>
+                    "Product Name" <span class="required">*</span>
                     <select name="productName" id="product-name" required>
                       <option disabled selected value="">Select a Product ...</option>
                     </select>
@@ -33,19 +34,19 @@
                 	<input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                 </div>
 
-                <label> Date of Intallation* <input type="date" name="completeDate" required></label>
+                <label> Date of Intallation <span class="required">*</span><input type="date" name="installationDate" id="date"></label>
 
                 <div>Which features did you find useful in the product?
                    <br><span>(check all that apply)</span>
                 </div>
                 <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
-                <label><input type="checkbox" id="easeofuse" name="easeofuse" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="easeOfUse" name="easeofuse" value="yes"> Ease of Use</label>
                 <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
                 <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
 
-                <label>Written Review <span>(Optional)</span><textarea name="textarea" rows="10" cols="30"></textarea>
+                <label>Written Review <span>(Optional)</span><textarea name="textarea" id="writtenreview" rows="5" cols="30"></textarea></label>
 
-                <label>Your Name <span>(Optional)</span><input type="text" name="name"></label>
+                <label>Your Name <span>(Optional)</span><input type="text" name="name" id="name"></label>
 
             <input type="submit" value="Post Review">
             </form>

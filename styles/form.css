@@ -1,4 +1,4 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 * { 
@@ -50,7 +50,7 @@ main {
 }
 
 
-.form label ,.form legend, form div {
+.formreview label, div{
     display: block;
     padding-top: 1rem;
     color: #5d196e;
@@ -58,25 +58,25 @@ main {
 }
 
 
-.form input[type="text"],
-.form input[type="date"],
-.form select,
-.form textarea {
+.formreview input[type="text"],
+.formreview input[type="date"],
+.formreview select,
+.formreview textarea {
     background-color: #eee;
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
-    padding: 0.75rem;
+    padding: 1rem;
     color: #555;
     width: 100%;
     appearance: none;
 }
 
-.form input[type="checkbox"]{
+.formreview input[type="checkbox"]{
     margin-right: 6px;
 }
 
-.form input[type="submit"]{
+.formreview input[type="submit"]{
     border: none;
     background-image: linear-gradient(#b79dc0, #542868);
     color: #fff;
@@ -88,7 +88,7 @@ main {
     box-shadow: 1px 1px 4px #999;
 }
 
-.form input:required{
+.formreview input:required{
     border: solid 3px #5d196e;
 }
 

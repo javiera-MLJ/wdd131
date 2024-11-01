@@ -29,23 +29,23 @@
                 <form method="get" action="welcome.html" class="wf1">
                 <fieldset>
                     <legend>personal information</legend>
-                    <label>First Name* <input type="text" name="fname" required></label>
-                    <label>Last Name* <input type="text" name="lname" required></label>
-                    <label>Id* <input type="text" name="Id" placeholder="12345678k" required></label>
-                    <label> Date of Birth* <input type="date" name="completeDate" required></label>
+                    <label>First Name* <input type="text" name="fname" id="fname"></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Id* <input type="text" name="Id" id="id" placeholder="12345678k" required></label>
+                    <label> Date of Birth* <input type="date" id="date" name="completeDate" required></label>
                     <div class="mini-title">Gender</div>
-                    <label><input type="radio" name="Gender" value="Male"> Male</label>
-                    <label><input type="radio" name="Gender" value="Female"> Female</label>
-                    <label><input type="radio" name="Gender" value="notsay"> Prefer not to say</label>
+                    <label><input type="radio" name="Gender" id="male" value="Male"> Male</label>
+                    <label><input type="radio" name="Gender" id="female" value="Female"> Female</label>
+                    <label><input type="radio" name="Gender" id="notsay" value="notsay"> Prefer not to say</label>
                 </fieldset>
             
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label>Contact Number <input type="tel" name="phone" placeholder="1235551234"></label>
-                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Contact Number <input type="tel" name="phone" id="tel" placeholder="1235551234"></label>
+                    <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
                     <div class="mini-title">Address</div>
                     <label> Country
-                        <select name="Subject">
+                        <select name="Subject" id="country">
                             <option value="">Please Select &#9662;</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Australia">Australia</option>
@@ -87,17 +87,17 @@
                         <option value="Vietnam">Vietnam</option>
                         </select>
                     </label>
-                    <label>Address Line 1* <input type="text" name="addressl1" required></label>
-                    <label>Address Line 2 <input type="text" name="addressl2"></label>
-                    <label>Town* <input type="text" name="town" required></label>
-                    <label>County* <input type="text" name="Country" required></label>
-                    <label>Post Code <input type="text" name="Postcode" ></label>
+                    <label>Address Line 1* <input type="text" id="addressl1" name="addressl1" required></label>
+                    <label>Address Line 2 <input type="text" id="addressl2" name="addressl2"></label>
+                    <label>Town* <input type="text" id="town" name="town" required></label>
+                    <label>County* <input type="text" id="country" name="Country" required></label>
+                    <label>Post Code <input type="text" id="postcode" name="Postcode" ></label>
                 </fieldset>
             
                 <fieldset>
                     <legend>Course Information</legend>
                         <label> select a course*
-                            <select name="Subject" required>
+                            <select name="Subject" id="course" required>
                                 <option value="">Please Select</option>
                             <option value="artistic-intro">Introduction to Artistic Gymnastics</option>
                             <option value="artistic-premium">Premium Artistic Gymnastics Club</option>
@@ -115,10 +115,10 @@
 
                 <fieldset>
                     <legend>course payment</legend>
-                    <label>card number* <input type="tel" name="card-number" placeholder="1234 5678 1234 5678" required></label>
-                    <label>name* <input type="text" name="name" required></label>
-                    <label>expiration date* <input type="month" name="expiration" required></label>
-                    <label>CVC* <input type="tel" name="cvc" placeholder="123" required></label>
+                    <label>card number* <input type="tel" id="card-number" name="card-number" placeholder="1234 5678 1234 5678" required></label>
+                    <label>name* <input type="text" id="name" name="name" required></label>
+                    <label>expiration date* <input type="month" id="expiration" name="expiration" required></label>
+                    <label>CVC* <input type="tel" name="cvc" id="cvc" placeholder="123" required></label>
 
                 </fieldset>
                 <input type="submit" value="join the club">

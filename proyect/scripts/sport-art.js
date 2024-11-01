@@ -156,18 +156,14 @@ function createTemplateCard(filteredCourses) {
     cardTemplate.insertAdjacentHTML(`beforeend`, cardHTML)
   });
 }
-document.addEventListener("DOMContentLoaded", () => {
-  const FormDisplay = document.querySelector(".joinClub");
-  const form = document.querySelector('.wf1');
-  let formsSended = Number(localStorage.getItem("FormsSended-ls")) || 0;
-  
-  FormDisplay.textContent = formsSended;
 
-  if (form) { 
-      form.addEventListener('submit', () => {
-          formsSended++;
-          localStorage.setItem("FormsSended-ls", formsSended);
-          FormDisplay.textContent = formsSended;
-      });
+let formsSended = window.localStorage.getItem("forms") || 0
+  
+const form = document.querySelector('form');
+const submit = document.querySelector('input[type="submit"]')
+submit.addEventListener('click'  , () => {
+  if(form.checkValidity()){
+    formsSended++;
   }
+  window.localStorage.setItem("forms", formsSended);
 });
